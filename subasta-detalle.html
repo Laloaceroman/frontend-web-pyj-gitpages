@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>SubastaPro - Subastas y Venta Directa</title>
+    <meta charset="UTF-8">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/main.css?v=94217" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=94217" type="text/javascript"></script>
+    <!-- Meta tags facebook-->
+    <meta property="og:title" content="SubastaPro - Subastas Online y Venta Directa">
+    <meta property="og:description" content="Participa en subastas exclusivas o compra directamente. La mejor plataforma de remates online.">
+    <meta property="og:image" content="img/og-image.jpg">
+    <!-- Meta tags twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SubastaPro - Subastas Online">
+    <meta name="twitter:description" content="Participa en subastas exclusivas o compra directamente.">
+    <meta name="twitter:image" content="img/og-image.jpg"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrap">
+        <div class="header__inner">
+          <div class="header__logo"><a href="index.html"><img src="img/icons/logo-subastapro.svg" alt="SubastaPro"></a></div>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="subastas.html">Subastas</a></li>
+              <li><a href="tienda.html">Tienda</a></li>
+              <li><a href="como-funciona.html">Cómo Funciona</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+          <div class="header__actions">
+            <div class="header__search">
+              <button type="button" class="header__search__btn"><span class="fa fa-search"></span></button>
+            </div>
+            <div class="header__cart"><a href="carrito.html"><span class="fa fa-shopping-cart"></span><span class="header__cart__count">0</span></a></div>
+            <div data-logged="false" class="header__user">
+              <div class="header__user__guest"><a href="#" data-modal="login" class="btn btn--outline btn--sm">Ingresar</a><a href="#" data-modal="register" class="btn btn--primary btn--sm">Registrarse</a></div>
+              <div class="header__user__logged">
+                <div class="header__profile"><a href="perfil.html"><span class="fa fa-user-circle"></span></a></div>
+              </div>
+            </div>
+            <div class="header__ham"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="header__mobile">
+        <div class="header__mobile__overlay"></div>
+        <div class="header__mobile__panel">
+          <div class="header__mobile__header">
+            <div class="header__mobile__logo"><img src="img/icons/logo-subastapro.svg" alt="SubastaPro"></div>
+            <div class="header__mobile__close"><span class="fa fa-times"></span></div>
+          </div>
+          <div class="header__mobile__body">
+            <nav class="header__mobile__nav">
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="subastas.html">Subastas</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="como-funciona.html">Cómo Funciona</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </nav>
+            <div class="header__mobile__cart"><a href="carrito.html"><span class="fa fa-shopping-cart"></span><span>Carrito</span><span class="header__cart__count">0</span></a></div>
+            <div class="header__mobile__actions"><a href="#" data-modal="login" class="btn btn--outline btn--block">Ingresar</a><a href="#" data-modal="register" class="btn btn--primary btn--block">Registrarse</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="app">
+      <section class="section section--page-header section--page-header--sm">
+        <div class="section__wrap">
+          <div class="page-header">
+            <div class="page-header__breadcrumb"><a href="index.html">Inicio</a><span class="fa fa-chevron-right"></span><a href="subastas.html">Subastas</a><span class="fa fa-chevron-right"></span><span>MacBook Pro 14"</span></div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--auction-detail">
+        <div class="section__wrap">
+          <div class="auction-detail">
+            <div class="auction-detail__gallery">
+              <div class="gallery">
+                <div class="gallery__main">
+                  <div class="gallery__badge gallery__badge--live"><span class="fa fa-circle"></span>En vivo</div><img src="img/uploads/image-subasta-1.webp" alt="MacBook Pro" class="gallery__image">
+                  <div class="gallery__zoom"><span class="fa fa-search-plus"></span></div>
+                </div>
+                <div class="gallery__thumbs">
+                  <button class="gallery__thumb gallery__thumb--active"><img src="img/uploads/image-subasta-1.webp" alt="Thumb 1"></button>
+                  <button class="gallery__thumb"><img src="img/uploads/image-subasta-1.webp" alt="Thumb 2"></button>
+                  <button class="gallery__thumb"><img src="img/uploads/image-subasta-1.webp" alt="Thumb 3"></button>
+                  <button class="gallery__thumb"><img src="img/uploads/image-subasta-1.webp" alt="Thumb 4"></button>
+                </div>
+              </div>
+            </div>
+            <div class="auction-detail__info">
+              <div class="auction-info">
+                <div class="auction-info__header">
+                  <div class="auction-info__category">Electrónica</div>
+                  <button class="auction-info__favorite"><span class="fa-regular fa-heart"></span><span>Guardar</span></button>
+                  <button class="auction-info__share"><span class="fa fa-share-alt"></span><span>Compartir</span></button>
+                </div>
+                <h1 class="auction-info__title">MacBook Pro 14" M3 Pro - 512GB SSD - Space Gray</h1>
+                <div class="auction-info__meta">
+                  <div class="auction-info__meta__item"><span class="fa fa-eye"></span><span>234 vistas</span></div>
+                  <div class="auction-info__meta__item"><span class="fa fa-users"></span><span>18 participantes</span></div>
+                  <div class="auction-info__meta__item"><span class="fa fa-gavel"></span><span>45 pujas</span></div>
+                </div>
+                <div data-auction-id="1" data-end-time="2024-12-20T15:30:00" class="auction-timer-card">
+                  <div class="auction-timer-card__header"><span class="fa fa-clock"></span><span>Tiempo restante</span></div>
+                  <div class="auction-timer-card__display">
+                    <div class="timer-unit"><span class="timer-unit__value timer__hours">02</span><span class="timer-unit__label">Horas</span></div>
+                    <div class="timer-separator">:</div>
+                    <div class="timer-unit"><span class="timer-unit__value timer__minutes">45</span><span class="timer-unit__label">Min</span></div>
+                    <div class="timer-separator">:</div>
+                    <div class="timer-unit"><span class="timer-unit__value timer__seconds">30</span><span class="timer-unit__label">Seg</span></div>
+                  </div>
+                  <div class="auction-timer-card__end"><span>Finaliza: 20 Dic 2024, 15:30 hrs</span></div>
+                </div>
+                <div class="auction-bid-card">
+                  <div class="auction-bid-card__current">
+                    <div class="auction-bid-card__label">Puja actual</div>
+                    <div class="auction-bid-card__amount">$450.000</div>
+                    <div class="auction-bid-card__leader"><span class="fa fa-crown"></span><span>Líder: Juan P.</span></div>
+                  </div>
+                  <div class="auction-bid-card__next">
+                    <div class="auction-bid-card__label">Tu próxima puja</div>
+                    <div class="auction-bid-card__value">
+                      <button type="button" class="bid-decrement"><span class="fa fa-minus"></span></button><span class="bid-amount">$460.000</span>
+                      <button type="button" class="bid-increment"><span class="fa fa-plus"></span></button>
+                    </div>
+                    <div class="auction-bid-card__increment"><span>Incremento mínimo: $10.000</span></div>
+                  </div>
+                  <div class="auction-bid-card__actions">
+                    <button data-modal="bid" class="btn btn--primary btn--lg btn--block"><span class="fa fa-gavel"></span><span>Pujar $460.000</span></button>
+                    <div class="auction-bid-card__or"><span>o</span></div>
+                    <button data-modal="buy-now" class="btn btn--secondary btn--lg btn--block"><span class="fa fa-bolt"></span><span>Comprar ahora por $890.000</span></button>
+                  </div>
+                  <div class="auction-bid-card__guarantee"><span class="fa fa-shield-alt"></span><span>Garantía requerida: $50.000</span></div>
+                </div>
+                <div class="auction-quick-info">
+                  <div class="auction-quick-info__item"><span class="fa fa-truck"></span>
+                    <div class="auction-quick-info__content"><strong>Envío gratis</strong><span>A todo Chile</span></div>
+                  </div>
+                  <div class="auction-quick-info__item"><span class="fa fa-undo"></span>
+                    <div class="auction-quick-info__content"><strong>Devolución</strong><span>30 días</span></div>
+                  </div>
+                  <div class="auction-quick-info__item"><span class="fa fa-shield-alt"></span>
+                    <div class="auction-quick-info__content"><strong>Garantía</strong><span>12 meses</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="auction-tabs">
+            <div class="tabs">
+              <div class="tabs__header">
+                <button data-tab="description" class="tab tab--active">Descripción</button>
+                <button data-tab="specs" class="tab">Especificaciones</button>
+                <button data-tab="shipping" class="tab">Envío</button>
+                <button data-tab="bids" class="tab">Historial de Pujas</button>
+              </div>
+              <div class="tabs__body">
+                <div id="tab-description" class="tab__panel tab__panel--active">
+                  <div class="tab__content">
+                    <h3>Descripción del Producto</h3>
+                    <p>MacBook Pro de 14 pulgadas con chip M3 Pro, el laptop más potente de Apple. Perfecto para profesionales creativos y desarrolladores que necesitan el máximo rendimiento.</p>
+                    <h4>Características principales:</h4>
+                    <ul>
+                      <li>Chip Apple M3 Pro con CPU de 11 núcleos y GPU de 14 núcleos</li>
+                      <li>18GB de memoria unificada</li>
+                      <li>SSD de 512GB ultrarrápido</li>
+                      <li>Pantalla Liquid Retina XDR de 14.2 pulgadas</li>
+                      <li>Hasta 17 horas de duración de batería</li>
+                      <li>Tres puertos Thunderbolt 4, HDMI, ranura SDXC y MagSafe 3</li>
+                    </ul>
+                    <h4>Estado del producto:</h4>
+                    <p>Este producto se encuentra en excelente estado, con mínimos signos de uso. Incluye caja original, cargador y documentación.</p>
+                    <div class="product-condition">
+                      <div class="product-condition__badge product-condition__badge--excellent"><span class="fa fa-check-circle"></span><span>Excelente estado</span></div><span>Verificado por nuestro equipo técnico</span>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab-specs" class="tab__panel">
+                  <div class="tab__content">
+                    <div class="specs-table">
+                      <div class="specs-row">
+                        <div class="specs-label">Procesador</div>
+                        <div class="specs-value">Apple M3 Pro (11 núcleos)</div>
+                      </div>
+                      <div class="specs-row">
+                        <div class="specs-label">Memoria RAM</div>
+                        <div class="specs-value">18GB Unificada</div>
+                      </div>
+                      <div class="specs-row">
+                        <div class="specs-label">Almacenamiento</div>
+                        <div class="specs-value">512GB SSD</div>
+                      </div>
+                      <div class="specs-row">
+                        <div class="specs-label">Pantalla</div>
+                        <div class="specs-value">14.2" Liquid Retina XDR</div>
+                      </div>
+                      <div class="specs-row">
+                        <div class="specs-label">Resolución</div>
+                        <div class="specs-value">3024 x 1964 píxeles</div>
+                      </div>
+                      <div class="specs-row">
+                        <div class="specs-label">GPU</div>
+                        <div class="specs-value">14 núcleos</div>
+                      </div>
+                      <div class="specs-row">
+                        <div class="specs-label">Batería</div>
+                        <div class="specs-value">Hasta 17 horas</div>
+                      </div>
+                      <div class="specs-row">
+                        <div class="specs-label">Peso</div>
+                        <div class="specs-value">1.60 kg</div>
+                      </div>
+                      <div class="specs-row">
+                        <div class="specs-label">Color</div>
+                        <div class="specs-value">Space Gray</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab-shipping" class="tab__panel">
+                  <div class="tab__content">
+                    <h3>Información de Envío</h3>
+                    <div class="shipping-options">
+                      <div class="shipping-option">
+                        <div class="shipping-option__icon"><span class="fa fa-truck"></span></div>
+                        <div class="shipping-option__info">
+                          <h4>Envío Estándar</h4>
+                          <p>3-5 días hábiles</p>
+                        </div>
+                        <div class="shipping-option__price">Gratis</div>
+                      </div>
+                      <div class="shipping-option">
+                        <div class="shipping-option__icon"><span class="fa fa-shipping-fast"></span></div>
+                        <div class="shipping-option__info">
+                          <h4>Envío Express</h4>
+                          <p>1-2 días hábiles</p>
+                        </div>
+                        <div class="shipping-option__price">$9.990</div>
+                      </div>
+                    </div>
+                    <div class="shipping-note"><span class="fa fa-info-circle"></span>
+                      <p>El envío se realiza una vez confirmado el pago. Recibirás un código de seguimiento por email.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab-bids" class="tab__panel">
+                  <div class="tab__content">
+                    <h3>Historial de Pujas</h3>
+                    <div class="bid-history">
+                      <div class="bid-history__item bid-history__item--leader">
+                        <div class="bid-history__rank"><span class="fa fa-crown"></span></div>
+                        <div class="bid-history__user">
+                          <div class="bid-history__avatar"><img src="img/avatars/1.jpg" alt="Usuario"></div>
+                          <div class="bid-history__info"><span class="bid-history__name">Juan P.</span><span class="bid-history__time">Hace 5 min</span></div>
+                        </div>
+                        <div class="bid-history__amount">$450.000</div>
+                      </div>
+                      <div class="bid-history__item">
+                        <div class="bid-history__rank">2</div>
+                        <div class="bid-history__user">
+                          <div class="bid-history__avatar"><img src="img/avatars/2.jpg" alt="Usuario"></div>
+                          <div class="bid-history__info"><span class="bid-history__name">María G.</span><span class="bid-history__time">Hace 12 min</span></div>
+                        </div>
+                        <div class="bid-history__amount">$440.000</div>
+                      </div>
+                      <div class="bid-history__item">
+                        <div class="bid-history__rank">3</div>
+                        <div class="bid-history__user">
+                          <div class="bid-history__avatar"><img src="img/avatars/3.jpg" alt="Usuario"></div>
+                          <div class="bid-history__info"><span class="bid-history__name">Carlos R.</span><span class="bid-history__time">Hace 25 min</span></div>
+                        </div>
+                        <div class="bid-history__amount">$430.000</div>
+                      </div>
+                      <div class="bid-history__item">
+                        <div class="bid-history__rank">4</div>
+                        <div class="bid-history__user">
+                          <div class="bid-history__avatar"><img src="img/avatars/4.png" alt="Usuario"></div>
+                          <div class="bid-history__info"><span class="bid-history__name">Ana M.</span><span class="bid-history__time">Hace 1 hora</span></div>
+                        </div>
+                        <div class="bid-history__amount">$420.000</div>
+                      </div>
+                      <button class="btn btn--outline btn--block">Ver más pujas</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--related">
+        <div class="section__wrap">
+          <div class="section__header">
+            <h2 class="section__title">Subastas Similares</h2>
+          </div>
+          <div class="section__body">
+            <div class="auction-grid">
+              <article data-end-time="2024-12-20T18:00:00" class="card card--auction">
+                <div class="card__badge card__badge--live"><span class="fa fa-circle"></span>En vivo</div>
+                <div class="card__favorite"><span class="fa-regular fa-heart"></span></div>
+                <div class="card__image"><img src="img/uploads/image-subasta-1.webp" alt="Producto"></div>
+                <div class="card__body">
+                  <div class="card__category">Electrónica</div>
+                  <h3 class="card__title">iPad Pro 12.9" M2</h3>
+                  <div class="card__timer"><span class="fa fa-clock"></span>
+                    <div class="card__timer__display"><span class="timer__hours">05</span><span>:</span><span class="timer__minutes">30</span><span>:</span><span class="timer__seconds">00</span></div>
+                  </div>
+                  <div class="card__bids">
+                    <div class="card__current-bid"><span>Puja actual</span><strong>$380.000</strong></div>
+                    <div class="card__bid-count"><span class="fa fa-users"></span><span>8 pujas</span></div>
+                  </div>
+                </div>
+                <div class="card__footer"><a href="subasta-detalle.html" class="btn btn--primary btn--block"><span>Pujar ahora</span><span class="fa fa-gavel"></span></a></div>
+              </article>
+              <article data-end-time="2024-12-20T18:00:00" class="card card--auction">
+                <div class="card__badge card__badge--live"><span class="fa fa-circle"></span>En vivo</div>
+                <div class="card__favorite"><span class="fa-regular fa-heart"></span></div>
+                <div class="card__image"><img src="img/uploads/image-subasta-1.webp" alt="Producto"></div>
+                <div class="card__body">
+                  <div class="card__category">Electrónica</div>
+                  <h3 class="card__title">iPad Pro 12.9" M2</h3>
+                  <div class="card__timer"><span class="fa fa-clock"></span>
+                    <div class="card__timer__display"><span class="timer__hours">05</span><span>:</span><span class="timer__minutes">30</span><span>:</span><span class="timer__seconds">00</span></div>
+                  </div>
+                  <div class="card__bids">
+                    <div class="card__current-bid"><span>Puja actual</span><strong>$380.000</strong></div>
+                    <div class="card__bid-count"><span class="fa fa-users"></span><span>8 pujas</span></div>
+                  </div>
+                </div>
+                <div class="card__footer"><a href="subasta-detalle.html" class="btn btn--primary btn--block"><span>Pujar ahora</span><span class="fa fa-gavel"></span></a></div>
+              </article>
+              <article data-end-time="2024-12-20T18:00:00" class="card card--auction">
+                <div class="card__badge card__badge--live"><span class="fa fa-circle"></span>En vivo</div>
+                <div class="card__favorite"><span class="fa-regular fa-heart"></span></div>
+                <div class="card__image"><img src="img/uploads/image-subasta-1.webp" alt="Producto"></div>
+                <div class="card__body">
+                  <div class="card__category">Electrónica</div>
+                  <h3 class="card__title">iPad Pro 12.9" M2</h3>
+                  <div class="card__timer"><span class="fa fa-clock"></span>
+                    <div class="card__timer__display"><span class="timer__hours">05</span><span>:</span><span class="timer__minutes">30</span><span>:</span><span class="timer__seconds">00</span></div>
+                  </div>
+                  <div class="card__bids">
+                    <div class="card__current-bid"><span>Puja actual</span><strong>$380.000</strong></div>
+                    <div class="card__bid-count"><span class="fa fa-users"></span><span>8 pujas</span></div>
+                  </div>
+                </div>
+                <div class="card__footer"><a href="subasta-detalle.html" class="btn btn--primary btn--block"><span>Pujar ahora</span><span class="fa fa-gavel"></span></a></div>
+              </article>
+              <article data-end-time="2024-12-20T18:00:00" class="card card--auction">
+                <div class="card__badge card__badge--live"><span class="fa fa-circle"></span>En vivo</div>
+                <div class="card__favorite"><span class="fa-regular fa-heart"></span></div>
+                <div class="card__image"><img src="img/uploads/image-subasta-1.webp" alt="Producto"></div>
+                <div class="card__body">
+                  <div class="card__category">Electrónica</div>
+                  <h3 class="card__title">iPad Pro 12.9" M2</h3>
+                  <div class="card__timer"><span class="fa fa-clock"></span>
+                    <div class="card__timer__display"><span class="timer__hours">05</span><span>:</span><span class="timer__minutes">30</span><span>:</span><span class="timer__seconds">00</span></div>
+                  </div>
+                  <div class="card__bids">
+                    <div class="card__current-bid"><span>Puja actual</span><strong>$380.000</strong></div>
+                    <div class="card__bid-count"><span class="fa fa-users"></span><span>8 pujas</span></div>
+                  </div>
+                </div>
+                <div class="card__footer"><a href="subasta-detalle.html" class="btn btn--primary btn--block"><span>Pujar ahora</span><span class="fa fa-gavel"></span></a></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="footer__wrap">
+          <div class="footer__grid">
+            <div class="footer__col">
+              <div class="footer__logo"><img src="img/icons/logo-subastapro-white.svg" alt="SubastaPro"></div>
+              <p class="footer__description">Tu plataforma de confianza para subastas online y venta directa. Participa en remates exclusivos o compra al instante.</p>
+              <div class="footer__socials"><a href="#" target="_blank"><span class="fa-brands fa-facebook-f"></span></a><a href="#" target="_blank"><span class="fa-brands fa-instagram"></span></a><a href="#" target="_blank"><span class="fa-brands fa-youtube"></span></a><a href="#" target="_blank"><span class="fa-brands fa-whatsapp"></span></a></div>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__title">Navegación</h4>
+              <ul class="footer__nav">
+                <li><a href="subastas.html">Subastas Activas</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="como-funciona.html">Cómo Funciona</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__title">Mi Cuenta</h4>
+              <ul class="footer__nav">
+                <li><a href="perfil.html">Mi Perfil</a></li>
+                <li><a href="mis-pujas.html">Mis Pujas</a></li>
+                <li><a href="mis-compras.html">Mis Compras</a></li>
+                <li><a href="favoritos.html">Favoritos</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__title">Contacto</h4>
+              <ul class="footer__contact">
+                <li><span class="fa fa-map-marker-alt"></span><span>Av. Principal 1234, Santiago, Chile</span></li>
+                <li><span class="fa fa-phone"></span><span>+56 2 2345 6789</span></li>
+                <li><span class="fa fa-envelope"></span><span>contacto@subastapro.cl</span></li>
+                <li><span class="fa fa-clock"></span><span>Lun - Vie: 9:00 - 18:00</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__wrap">
+          <div class="footer__bottom__inner">
+            <p>&copy; 2024 SubastaPro. Todos los derechos reservados.</p>
+            <div class="footer__legal"><a href="terminos.html">Términos y Condiciones</a><a href="privacidad.html">Política de Privacidad</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="modal-login" class="modal modal--auth">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-times"></span></div>
+          <div class="modal__header">
+            <h3>Iniciar Sesión</h3>
+            <p>Ingresa a tu cuenta para participar en subastas</p>
+          </div>
+          <div class="modal__body">
+            <form class="form form--auth">
+              <div class="form__group">
+                <label class="form__label">Email o Teléfono</label>
+                <div class="form__input"><span class="form__icon fa fa-envelope"></span>
+                  <input type="text" placeholder="correo@ejemplo.com" required>
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__label">Contraseña</label>
+                <div class="form__input"><span class="form__icon fa fa-lock"></span>
+                  <input type="password" placeholder="••••••••" required>
+                  <button type="button" class="form__toggle-password"><span class="fa fa-eye"></span></button>
+                </div>
+              </div>
+              <div class="form__row">
+                <label class="form__checkbox">
+                  <input type="checkbox"><span>Recordarme</span>
+                </label><a href="#" class="form__link">¿Olvidaste tu contraseña?</a>
+              </div>
+              <button type="submit" class="btn btn--primary btn--block">Ingresar</button>
+              <div class="form__divider"><span>o continúa con</span></div>
+              <div class="form__social">
+                <button type="button" class="btn btn--social btn--google"><span class="fa-brands fa-google"></span><span>Google</span></button>
+                <button type="button" class="btn btn--social btn--facebook"><span class="fa-brands fa-facebook-f"></span><span>Facebook</span></button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__footer">
+            <p>¿No tienes cuenta? <a href="#" data-modal-switch="register">Regístrate aquí</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-register" class="modal modal--auth">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-times"></span></div>
+          <div class="modal__header">
+            <h3>Crear Cuenta</h3>
+            <p>Regístrate para comenzar a participar</p>
+          </div>
+          <div class="modal__body">
+            <form class="form form--auth">
+              <div class="form__row form__row--2col">
+                <div class="form__group">
+                  <label class="form__label">Nombre</label>
+                  <div class="form__input">
+                    <input type="text" placeholder="Juan" required>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label class="form__label">Apellido</label>
+                  <div class="form__input">
+                    <input type="text" placeholder="Pérez" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__label">Email</label>
+                <div class="form__input"><span class="form__icon fa fa-envelope"></span>
+                  <input type="email" placeholder="correo@ejemplo.com" required>
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__label">Teléfono</label>
+                <div class="form__input"><span class="form__icon fa fa-phone"></span>
+                  <input type="tel" placeholder="+56 9 1234 5678" required>
+                </div><span class="form__hint">Usaremos tu teléfono para verificar tu cuenta</span>
+              </div>
+              <div class="form__group">
+                <label class="form__label">RUT</label>
+                <div class="form__input"><span class="form__icon fa fa-id-card"></span>
+                  <input type="text" placeholder="12.345.678-9" required>
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__label">Contraseña</label>
+                <div class="form__input"><span class="form__icon fa fa-lock"></span>
+                  <input type="password" placeholder="Mínimo 8 caracteres" required>
+                  <button type="button" class="form__toggle-password"><span class="fa fa-eye"></span></button>
+                </div>
+                <div class="form__password-strength">
+                  <div class="form__password-strength__bar"></div><span class="form__password-strength__text"></span>
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__checkbox">
+                  <input type="checkbox" required><span>Acepto los <a href="terminos.html" target="_blank">Términos y Condiciones</a> y la <a href="privacidad.html" target="_blank">Política de Privacidad</a></span>
+                </label>
+              </div>
+              <button type="submit" class="btn btn--primary btn--block">Crear Cuenta</button>
+              <div class="form__divider"><span>o regístrate con</span></div>
+              <div class="form__social">
+                <button type="button" class="btn btn--social btn--google"><span class="fa-brands fa-google"></span><span>Google</span></button>
+                <button type="button" class="btn btn--social btn--facebook"><span class="fa-brands fa-facebook-f"></span><span>Facebook</span></button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__footer">
+            <p>¿Ya tienes cuenta? <a href="#" data-modal-switch="login">Inicia sesión</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-verify" class="modal modal--auth">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <div class="modal__box modal__box--sm">
+          <div class="modal__close"><span class="fa fa-times"></span></div>
+          <div class="modal__header">
+            <div class="modal__icon"><span class="fa fa-mobile-alt"></span></div>
+            <h3>Verifica tu Teléfono</h3>
+            <p>Ingresa el código de 6 dígitos que enviamos a tu celular</p>
+          </div>
+          <div class="modal__body">
+            <form class="form form--verify">
+              <div class="form__code">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+              </div>
+              <button type="submit" class="btn btn--primary btn--block">Verificar</button>
+              <div class="form__resend">
+                <p>¿No recibiste el código?</p>
+                <button type="button" class="btn btn--link">Reenviar código</button><span class="form__countdown">(disponible en 60s)</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-bid" class="modal modal--bid">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-times"></span></div>
+          <div class="modal__header">
+            <h3>Confirmar Puja</h3>
+          </div>
+          <div class="modal__body">
+            <div class="bid__product">
+              <div class="bid__product__image"><img src="img/uploads/product-1.jpg" alt="Producto"></div>
+              <div class="bid__product__info">
+                <h4 class="bid__product__name">MacBook Pro 14" M3</h4>
+                <div class="bid__product__current"><span>Puja actual:</span><strong>$450.000</strong></div>
+              </div>
+            </div>
+            <div class="bid__amount">
+              <div class="bid__amount__label">Tu puja será de:</div>
+              <div class="bid__amount__value">$460.000</div>
+              <div class="bid__amount__increment"><span>Incremento: $10.000</span></div>
+            </div>
+            <div class="bid__guarantee"><span class="fa fa-shield-alt"></span>
+              <p>Se retendrá una garantía de $50.000 en tu tarjeta</p>
+            </div>
+            <div class="bid__actions">
+              <button type="button" data-modal-close class="btn btn--outline">Cancelar</button>
+              <button type="button" data-bid-confirm class="btn btn--primary">Confirmar Puja</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-buy-now" class="modal modal--buy">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-times"></span></div>
+          <div class="modal__header">
+            <h3>Comprar Ahora</h3>
+          </div>
+          <div class="modal__body">
+            <div class="buy__product">
+              <div class="buy__product__image"><img src="img/uploads/product-1.jpg" alt="Producto"></div>
+              <div class="buy__product__info">
+                <h4 class="buy__product__name">MacBook Pro 14" M3</h4>
+                <div class="buy__product__price">$890.000</div>
+              </div>
+            </div>
+            <div class="buy__summary">
+              <div class="buy__summary__row"><span>Subtotal</span><span>$890.000</span></div>
+              <div class="buy__summary__row"><span>Envío</span><span>Gratis</span></div>
+              <div class="buy__summary__row buy__summary__row--total"><span>Total</span><strong>$890.000</strong></div>
+            </div>
+            <div class="buy__actions">
+              <button type="button" data-modal-close class="btn btn--outline">Cancelar</button>
+              <button type="button" class="btn btn--primary">Proceder al Pago</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

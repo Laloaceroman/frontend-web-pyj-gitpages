@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>SubastaPro - Subastas y Venta Directa</title>
+    <meta charset="UTF-8">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/main.css?v=23768" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=23768" type="text/javascript"></script>
+    <!-- Meta tags facebook-->
+    <meta property="og:title" content="SubastaPro - Subastas Online y Venta Directa">
+    <meta property="og:description" content="Participa en subastas exclusivas o compra directamente. La mejor plataforma de remates online.">
+    <meta property="og:image" content="img/og-image.jpg">
+    <!-- Meta tags twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SubastaPro - Subastas Online">
+    <meta name="twitter:description" content="Participa en subastas exclusivas o compra directamente.">
+    <meta name="twitter:image" content="img/og-image.jpg"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrap">
+        <div class="header__inner">
+          <div class="header__logo"><a href="index.html"><img src="img/icons/logo-subastapro.svg" alt="SubastaPro"></a></div>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="subastas.html">Subastas</a></li>
+              <li><a href="tienda.html">Tienda</a></li>
+              <li><a href="como-funciona.html">Cómo Funciona</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+          <div class="header__actions">
+            <div class="header__search">
+              <button type="button" class="header__search__btn"><span class="fa fa-search"></span></button>
+            </div>
+            <div class="header__cart"><a href="carrito.html"><span class="fa fa-shopping-cart"></span><span class="header__cart__count">0</span></a></div>
+            <div data-logged="false" class="header__user">
+              <div class="header__user__guest"><a href="#" data-modal="login" class="btn btn--outline btn--sm">Ingresar</a><a href="#" data-modal="register" class="btn btn--primary btn--sm">Registrarse</a></div>
+              <div class="header__user__logged">
+                <div class="header__profile"><a href="perfil.html"><span class="fa fa-user-circle"></span></a></div>
+              </div>
+            </div>
+            <div class="header__ham"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="header__mobile">
+        <div class="header__mobile__overlay"></div>
+        <div class="header__mobile__panel">
+          <div class="header__mobile__header">
+            <div class="header__mobile__logo"><img src="img/icons/logo-subastapro.svg" alt="SubastaPro"></div>
+            <div class="header__mobile__close"><span class="fa fa-times"></span></div>
+          </div>
+          <div class="header__mobile__body">
+            <nav class="header__mobile__nav">
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="subastas.html">Subastas</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="como-funciona.html">Cómo Funciona</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </nav>
+            <div class="header__mobile__cart"><a href="carrito.html"><span class="fa fa-shopping-cart"></span><span>Carrito</span><span class="header__cart__count">0</span></a></div>
+            <div class="header__mobile__actions"><a href="#" data-modal="login" class="btn btn--outline btn--block">Ingresar</a><a href="#" data-modal="register" class="btn btn--primary btn--block">Registrarse</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="app">
+      <section class="section section--page-header section--page-header--centered">
+        <div class="section__wrap">
+          <div class="page-header page-header--centered">
+            <h1 class="page-header__title">¿Cómo Funciona?</h1>
+            <p class="page-header__description">Todo lo que necesitas saber para participar en subastas y comprar en nuestra plataforma</p>
+          </div>
+        </div>
+      </section>
+      <section class="section section--steps">
+        <div class="section__wrap">
+          <div class="section__header section__header--center"><span class="section__badge">Proceso Simple</span>
+            <h2 class="section__title">Participa en 4 pasos</h2>
+          </div>
+          <div class="section__body">
+            <div class="steps steps--detailed">
+              <div class="step">
+                <div class="step__number">1</div>
+                <div class="step__content">
+                  <div class="step__icon"><span class="fa fa-user-plus"></span></div>
+                  <h3 class="step__title">Crea tu cuenta</h3>
+                  <p class="step__description">Regístrate con tu email y número de teléfono. Verificaremos tu identidad para garantizar transacciones seguras.</p>
+                  <ul class="step__list">
+                    <li><span class="fa fa-check"></span><span>Registro en menos de 2 minutos</span></li>
+                    <li><span class="fa fa-check"></span><span>Verificación por SMS</span></li>
+                    <li><span class="fa fa-check"></span><span>Datos protegidos y encriptados</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__number">2</div>
+                <div class="step__content">
+                  <div class="step__icon"><span class="fa fa-credit-card"></span></div>
+                  <h3 class="step__title">Configura tu método de pago</h3>
+                  <p class="step__description">Agrega una tarjeta de crédito o débito para poder participar en subastas y realizar compras.</p>
+                  <ul class="step__list">
+                    <li><span class="fa fa-check"></span><span>Múltiples métodos de pago</span></li>
+                    <li><span class="fa fa-check"></span><span>Sistema de garantías transparente</span></li>
+                    <li><span class="fa fa-check"></span><span>Billetera virtual disponible</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__number">3</div>
+                <div class="step__content">
+                  <div class="step__icon"><span class="fa fa-gavel"></span></div>
+                  <h3 class="step__title">Explora y participa</h3>
+                  <p class="step__description">Navega por nuestras subastas activas, encuentra lo que buscas y realiza tus pujas con un solo clic.</p>
+                  <ul class="step__list">
+                    <li><span class="fa fa-check"></span><span>Subastas con temporizador visible</span></li>
+                    <li><span class="fa fa-check"></span><span>Notificaciones en tiempo real</span></li>
+                    <li><span class="fa fa-check"></span><span>Opción "Comprar ahora" disponible</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__number">4</div>
+                <div class="step__content">
+                  <div class="step__icon"><span class="fa fa-truck"></span></div>
+                  <h3 class="step__title">Recibe tu producto</h3>
+                  <p class="step__description">Si ganas la subasta o compras directamente, procesamos tu pago y enviamos el producto a tu domicilio.</p>
+                  <ul class="step__list">
+                    <li><span class="fa fa-check"></span><span>Envío a todo Chile</span></li>
+                    <li><span class="fa fa-check"></span><span>Seguimiento en tiempo real</span></li>
+                    <li><span class="fa fa-check"></span><span>Garantía de satisfacción</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--auction-types">
+        <div class="section__wrap">
+          <div class="section__header section__header--center"><span class="section__badge">Modalidades</span>
+            <h2 class="section__title">Dos formas de comprar</h2>
+          </div>
+          <div class="section__body">
+            <div class="comparison-cards">
+              <div class="comparison-card">
+                <div class="comparison-card__icon"><span class="fa fa-gavel"></span></div>
+                <h3 class="comparison-card__title">Subastas</h3>
+                <p class="comparison-card__description">Participa en subastas con temporizador y compite por los mejores precios</p>
+                <ul class="comparison-card__features">
+                  <li><span class="fa fa-check"></span><span>Precios desde el mínimo</span></li>
+                  <li><span class="fa fa-check"></span><span>Temporizador visible</span></li>
+                  <li><span class="fa fa-check"></span><span>Notificaciones de puja</span></li>
+                  <li><span class="fa fa-check"></span><span>Subastas flash de 5 min</span></li>
+                  <li><span class="fa fa-check"></span><span>Opción "Comprar ahora"</span></li>
+                </ul><a href="subastas.html" class="btn btn--primary btn--block">Ver Subastas</a>
+              </div>
+              <div class="comparison-card comparison-card--highlighted">
+                <div class="comparison-card__badge">Más Popular</div>
+                <div class="comparison-card__icon"><span class="fa fa-shopping-cart"></span></div>
+                <h3 class="comparison-card__title">Venta Directa</h3>
+                <p class="comparison-card__description">Compra inmediatamente a precio fijo sin esperar</p>
+                <ul class="comparison-card__features">
+                  <li><span class="fa fa-check"></span><span>Precio fijo garantizado</span></li>
+                  <li><span class="fa fa-check"></span><span>Compra instantánea</span></li>
+                  <li><span class="fa fa-check"></span><span>Sin competencia</span></li>
+                  <li><span class="fa fa-check"></span><span>Disponibilidad inmediata</span></li>
+                  <li><span class="fa fa-check"></span><span>Carrito de compras</span></li>
+                </ul><a href="tienda.html" class="btn btn--primary btn--block">Ir a la Tienda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--guarantees">
+        <div class="section__wrap">
+          <div class="section__header section__header--center"><span class="section__badge">Seguridad</span>
+            <h2 class="section__title">Sistema de Garantías</h2>
+            <p class="section__description">Protegemos tanto a compradores como a vendedores</p>
+          </div>
+          <div class="section__body">
+            <div class="guarantee-info">
+              <div class="guarantee-info__content">
+                <h3>¿Cómo funcionan las garantías?</h3>
+                <p>Para participar en subastas, retenemos temporalmente un monto de garantía en tu tarjeta. Este monto varía según el valor del producto.</p>
+                <div class="guarantee-table">
+                  <div class="guarantee-table__row">
+                    <div class="guarantee-table__cell">Productos hasta $100.000</div>
+                    <div class="guarantee-table__cell">Garantía de $10.000</div>
+                  </div>
+                  <div class="guarantee-table__row">
+                    <div class="guarantee-table__cell">Productos $100.000 - $500.000</div>
+                    <div class="guarantee-table__cell">Garantía de $50.000</div>
+                  </div>
+                  <div class="guarantee-table__row">
+                    <div class="guarantee-table__cell">Productos sobre $500.000</div>
+                    <div class="guarantee-table__cell">Garantía de $100.000</div>
+                  </div>
+                </div>
+                <div class="guarantee-note"><span class="fa fa-info-circle"></span>
+                  <p>La garantía se libera automáticamente si no ganas la subasta. Si ganas, se aplica al pago final.</p>
+                </div>
+              </div>
+              <div class="guarantee-info__visual">
+                <div class="guarantee-flow">
+                  <div class="guarantee-flow__step">
+                    <div class="guarantee-flow__icon"><span class="fa fa-lock"></span></div><span>Retención temporal</span>
+                  </div>
+                  <div class="guarantee-flow__arrow"><span class="fa fa-arrow-down"></span></div>
+                  <div class="guarantee-flow__step">
+                    <div class="guarantee-flow__icon"><span class="fa fa-gavel"></span></div><span>Participas en subasta</span>
+                  </div>
+                  <div class="guarantee-flow__arrow"><span class="fa fa-arrow-down"></span></div>
+                  <div class="guarantee-flow__step guarantee-flow__step--split">
+                    <div class="guarantee-flow__option">
+                      <div class="guarantee-flow__icon guarantee-flow__icon--success"><span class="fa fa-trophy"></span></div><span>Ganas: se aplica al pago</span>
+                    </div>
+                    <div class="guarantee-flow__option">
+                      <div class="guarantee-flow__icon guarantee-flow__icon--neutral"><span class="fa fa-undo"></span></div><span>No ganas: se devuelve</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--faq">
+        <div class="section__wrap">
+          <div class="section__header section__header--center"><span class="section__badge">FAQ</span>
+            <h2 class="section__title">Preguntas Frecuentes</h2>
+          </div>
+          <div class="section__body">
+            <div class="faq-list">
+              <div class="faq-item">
+                <div class="faq-item__question">
+                  <h4>¿Necesito registrarme para participar?</h4><span class="fa fa-chevron-down"></span>
+                </div>
+                <div class="faq-item__answer">
+                  <p>Sí, es necesario crear una cuenta y verificar tu identidad para participar en subastas o realizar compras. Esto nos permite garantizar transacciones seguras y evitar fraudes.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-item__question">
+                  <h4>¿Qué pasa si alguien supera mi puja?</h4><span class="fa fa-chevron-down"></span>
+                </div>
+                <div class="faq-item__answer">
+                  <p>Recibirás una notificación inmediata por email y/o WhatsApp (según tu configuración) para que puedas realizar una nueva puja si lo deseas.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-item__question">
+                  <h4>¿Puedo cancelar una puja?</h4><span class="fa fa-chevron-down"></span>
+                </div>
+                <div class="faq-item__answer">
+                  <p>Las pujas son compromisos de compra y no pueden cancelarse una vez realizadas. Por favor, asegúrate de querer el producto antes de pujar.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-item__question">
+                  <h4>¿Qué métodos de pago aceptan?</h4><span class="fa fa-chevron-down"></span>
+                </div>
+                <div class="faq-item__answer">
+                  <p>Aceptamos tarjetas de crédito y débito (Visa, Mastercard, American Express), transferencia bancaria y nuestra billetera virtual.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-item__question">
+                  <h4>¿Cómo funciona el envío?</h4><span class="fa fa-chevron-down"></span>
+                </div>
+                <div class="faq-item__answer">
+                  <p>Realizamos envíos a todo Chile. Los productos se despachan dentro de 24-48 horas hábiles después de confirmar el pago. Recibirás un código de seguimiento por email.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-item__question">
+                  <h4>¿Qué garantía tienen los productos?</h4><span class="fa fa-chevron-down"></span>
+                </div>
+                <div class="faq-item__answer">
+                  <p>Todos los productos incluyen garantía de satisfacción de 30 días. Si el producto no coincide con la descripción, puedes solicitar una devolución completa.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-item__question">
+                  <h4>¿Qué son las subastas flash?</h4><span class="fa fa-chevron-down"></span>
+                </div>
+                <div class="faq-item__answer">
+                  <p>Las subastas flash son remates de corta duración (generalmente 5 minutos) con productos a precios muy atractivos. Se anuncian con anticipación para que puedas prepararte.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--cta">
+        <div class="section__wrap">
+          <div class="cta">
+            <div class="cta__content">
+              <h2 class="cta__title">¿Listo para empezar?</h2>
+              <p class="cta__description">Únete a miles de usuarios que ya disfrutan de las mejores ofertas</p>
+              <div class="cta__actions"><a href="#" data-modal="register" class="btn btn--primary btn--lg"><span>Crear cuenta gratis</span><span class="fa fa-arrow-right"></span></a><a href="subastas.html" class="btn btn--outline btn--lg"><span>Ver subastas activas</span></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="footer__wrap">
+          <div class="footer__grid">
+            <div class="footer__col">
+              <div class="footer__logo"><img src="img/icons/logo-subastapro-white.svg" alt="SubastaPro"></div>
+              <p class="footer__description">Tu plataforma de confianza para subastas online y venta directa. Participa en remates exclusivos o compra al instante.</p>
+              <div class="footer__socials"><a href="#" target="_blank"><span class="fa-brands fa-facebook-f"></span></a><a href="#" target="_blank"><span class="fa-brands fa-instagram"></span></a><a href="#" target="_blank"><span class="fa-brands fa-youtube"></span></a><a href="#" target="_blank"><span class="fa-brands fa-whatsapp"></span></a></div>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__title">Navegación</h4>
+              <ul class="footer__nav">
+                <li><a href="subastas.html">Subastas Activas</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="como-funciona.html">Cómo Funciona</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__title">Mi Cuenta</h4>
+              <ul class="footer__nav">
+                <li><a href="perfil.html">Mi Perfil</a></li>
+                <li><a href="mis-pujas.html">Mis Pujas</a></li>
+                <li><a href="mis-compras.html">Mis Compras</a></li>
+                <li><a href="favoritos.html">Favoritos</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__title">Contacto</h4>
+              <ul class="footer__contact">
+                <li><span class="fa fa-map-marker-alt"></span><span>Av. Principal 1234, Santiago, Chile</span></li>
+                <li><span class="fa fa-phone"></span><span>+56 2 2345 6789</span></li>
+                <li><span class="fa fa-envelope"></span><span>contacto@subastapro.cl</span></li>
+                <li><span class="fa fa-clock"></span><span>Lun - Vie: 9:00 - 18:00</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__wrap">
+          <div class="footer__bottom__inner">
+            <p>&copy; 2024 SubastaPro. Todos los derechos reservados.</p>
+            <div class="footer__legal"><a href="terminos.html">Términos y Condiciones</a><a href="privacidad.html">Política de Privacidad</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="modal-login" class="modal modal--auth">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-times"></span></div>
+          <div class="modal__header">
+            <h3>Iniciar Sesión</h3>
+            <p>Ingresa a tu cuenta para participar en subastas</p>
+          </div>
+          <div class="modal__body">
+            <form class="form form--auth">
+              <div class="form__group">
+                <label class="form__label">Email o Teléfono</label>
+                <div class="form__input"><span class="form__icon fa fa-envelope"></span>
+                  <input type="text" placeholder="correo@ejemplo.com" required>
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__label">Contraseña</label>
+                <div class="form__input"><span class="form__icon fa fa-lock"></span>
+                  <input type="password" placeholder="••••••••" required>
+                  <button type="button" class="form__toggle-password"><span class="fa fa-eye"></span></button>
+                </div>
+              </div>
+              <div class="form__row">
+                <label class="form__checkbox">
+                  <input type="checkbox"><span>Recordarme</span>
+                </label><a href="#" class="form__link">¿Olvidaste tu contraseña?</a>
+              </div>
+              <button type="submit" class="btn btn--primary btn--block">Ingresar</button>
+              <div class="form__divider"><span>o continúa con</span></div>
+              <div class="form__social">
+                <button type="button" class="btn btn--social btn--google"><span class="fa-brands fa-google"></span><span>Google</span></button>
+                <button type="button" class="btn btn--social btn--facebook"><span class="fa-brands fa-facebook-f"></span><span>Facebook</span></button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__footer">
+            <p>¿No tienes cuenta? <a href="#" data-modal-switch="register">Regístrate aquí</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-register" class="modal modal--auth">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-times"></span></div>
+          <div class="modal__header">
+            <h3>Crear Cuenta</h3>
+            <p>Regístrate para comenzar a participar</p>
+          </div>
+          <div class="modal__body">
+            <form class="form form--auth">
+              <div class="form__row form__row--2col">
+                <div class="form__group">
+                  <label class="form__label">Nombre</label>
+                  <div class="form__input">
+                    <input type="text" placeholder="Juan" required>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label class="form__label">Apellido</label>
+                  <div class="form__input">
+                    <input type="text" placeholder="Pérez" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__label">Email</label>
+                <div class="form__input"><span class="form__icon fa fa-envelope"></span>
+                  <input type="email" placeholder="correo@ejemplo.com" required>
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__label">Teléfono</label>
+                <div class="form__input"><span class="form__icon fa fa-phone"></span>
+                  <input type="tel" placeholder="+56 9 1234 5678" required>
+                </div><span class="form__hint">Usaremos tu teléfono para verificar tu cuenta</span>
+              </div>
+              <div class="form__group">
+                <label class="form__label">RUT</label>
+                <div class="form__input"><span class="form__icon fa fa-id-card"></span>
+                  <input type="text" placeholder="12.345.678-9" required>
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__label">Contraseña</label>
+                <div class="form__input"><span class="form__icon fa fa-lock"></span>
+                  <input type="password" placeholder="Mínimo 8 caracteres" required>
+                  <button type="button" class="form__toggle-password"><span class="fa fa-eye"></span></button>
+                </div>
+                <div class="form__password-strength">
+                  <div class="form__password-strength__bar"></div><span class="form__password-strength__text"></span>
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__checkbox">
+                  <input type="checkbox" required><span>Acepto los <a href="terminos.html" target="_blank">Términos y Condiciones</a> y la <a href="privacidad.html" target="_blank">Política de Privacidad</a></span>
+                </label>
+              </div>
+              <button type="submit" class="btn btn--primary btn--block">Crear Cuenta</button>
+              <div class="form__divider"><span>o regístrate con</span></div>
+              <div class="form__social">
+                <button type="button" class="btn btn--social btn--google"><span class="fa-brands fa-google"></span><span>Google</span></button>
+                <button type="button" class="btn btn--social btn--facebook"><span class="fa-brands fa-facebook-f"></span><span>Facebook</span></button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__footer">
+            <p>¿Ya tienes cuenta? <a href="#" data-modal-switch="login">Inicia sesión</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-verify" class="modal modal--auth">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <div class="modal__box modal__box--sm">
+          <div class="modal__close"><span class="fa fa-times"></span></div>
+          <div class="modal__header">
+            <div class="modal__icon"><span class="fa fa-mobile-alt"></span></div>
+            <h3>Verifica tu Teléfono</h3>
+            <p>Ingresa el código de 6 dígitos que enviamos a tu celular</p>
+          </div>
+          <div class="modal__body">
+            <form class="form form--verify">
+              <div class="form__code">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+              </div>
+              <button type="submit" class="btn btn--primary btn--block">Verificar</button>
+              <div class="form__resend">
+                <p>¿No recibiste el código?</p>
+                <button type="button" class="btn btn--link">Reenviar código</button><span class="form__countdown">(disponible en 60s)</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-bid" class="modal modal--bid">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-times"></span></div>
+          <div class="modal__header">
+            <h3>Confirmar Puja</h3>
+          </div>
+          <div class="modal__body">
+            <div class="bid__product">
+              <div class="bid__product__image"><img src="img/uploads/product-1.jpg" alt="Producto"></div>
+              <div class="bid__product__info">
+                <h4 class="bid__product__name">MacBook Pro 14" M3</h4>
+                <div class="bid__product__current"><span>Puja actual:</span><strong>$450.000</strong></div>
+              </div>
+            </div>
+            <div class="bid__amount">
+              <div class="bid__amount__label">Tu puja será de:</div>
+              <div class="bid__amount__value">$460.000</div>
+              <div class="bid__amount__increment"><span>Incremento: $10.000</span></div>
+            </div>
+            <div class="bid__guarantee"><span class="fa fa-shield-alt"></span>
+              <p>Se retendrá una garantía de $50.000 en tu tarjeta</p>
+            </div>
+            <div class="bid__actions">
+              <button type="button" data-modal-close class="btn btn--outline">Cancelar</button>
+              <button type="button" data-bid-confirm class="btn btn--primary">Confirmar Puja</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-buy-now" class="modal modal--buy">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-times"></span></div>
+          <div class="modal__header">
+            <h3>Comprar Ahora</h3>
+          </div>
+          <div class="modal__body">
+            <div class="buy__product">
+              <div class="buy__product__image"><img src="img/uploads/product-1.jpg" alt="Producto"></div>
+              <div class="buy__product__info">
+                <h4 class="buy__product__name">MacBook Pro 14" M3</h4>
+                <div class="buy__product__price">$890.000</div>
+              </div>
+            </div>
+            <div class="buy__summary">
+              <div class="buy__summary__row"><span>Subtotal</span><span>$890.000</span></div>
+              <div class="buy__summary__row"><span>Envío</span><span>Gratis</span></div>
+              <div class="buy__summary__row buy__summary__row--total"><span>Total</span><strong>$890.000</strong></div>
+            </div>
+            <div class="buy__actions">
+              <button type="button" data-modal-close class="btn btn--outline">Cancelar</button>
+              <button type="button" class="btn btn--primary">Proceder al Pago</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

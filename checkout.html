@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>SubastaPro - Subastas y Venta Directa</title>
+    <meta charset="UTF-8">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/main.css?v=43567" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=43567" type="text/javascript"></script>
+    <!-- Meta tags facebook-->
+    <meta property="og:title" content="SubastaPro - Subastas Online y Venta Directa">
+    <meta property="og:description" content="Participa en subastas exclusivas o compra directamente. La mejor plataforma de remates online.">
+    <meta property="og:image" content="img/og-image.jpg">
+    <!-- Meta tags twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SubastaPro - Subastas Online">
+    <meta name="twitter:description" content="Participa en subastas exclusivas o compra directamente.">
+    <meta name="twitter:image" content="img/og-image.jpg"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrap">
+        <div class="header__inner">
+          <div class="header__logo"><a href="index.html"><img src="img/icons/logo-subastapro.svg" alt="SubastaPro"></a></div>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="subastas.html">Subastas</a></li>
+              <li><a href="tienda.html">Tienda</a></li>
+              <li><a href="como-funciona.html">Cómo Funciona</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+          <div class="header__actions">
+            <div class="header__search">
+              <button type="button" class="header__search__btn"><span class="fa fa-search"></span></button>
+            </div>
+            <div class="header__cart"><a href="carrito.html"><span class="fa fa-shopping-cart"></span><span class="header__cart__count">0</span></a></div>
+            <div data-logged="false" class="header__user">
+              <div class="header__user__guest"><a href="#" data-modal="login" class="btn btn--outline btn--sm">Ingresar</a><a href="#" data-modal="register" class="btn btn--primary btn--sm">Registrarse</a></div>
+              <div class="header__user__logged">
+                <div class="header__profile"><a href="perfil.html"><span class="fa fa-user-circle"></span></a></div>
+              </div>
+            </div>
+            <div class="header__ham"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="header__mobile">
+        <div class="header__mobile__overlay"></div>
+        <div class="header__mobile__panel">
+          <div class="header__mobile__header">
+            <div class="header__mobile__logo"><img src="img/icons/logo-subastapro.svg" alt="SubastaPro"></div>
+            <div class="header__mobile__close"><span class="fa fa-times"></span></div>
+          </div>
+          <div class="header__mobile__body">
+            <nav class="header__mobile__nav">
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="subastas.html">Subastas</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="como-funciona.html">Cómo Funciona</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </nav>
+            <div class="header__mobile__cart"><a href="carrito.html"><span class="fa fa-shopping-cart"></span><span>Carrito</span><span class="header__cart__count">0</span></a></div>
+            <div class="header__mobile__actions"><a href="#" data-modal="login" class="btn btn--outline btn--block">Ingresar</a><a href="#" data-modal="register" class="btn btn--primary btn--block">Registrarse</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="app">
+      <section class="section section--page-header section--page-header--sm">
+        <div class="section__wrap">
+          <div class="page-header">
+            <div class="page-header__breadcrumb"><a href="index.html">Inicio</a><span class="fa fa-chevron-right"></span><a href="carrito.html">Carrito</a><span class="fa fa-chevron-right"></span><span>Checkout</span></div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--checkout">
+        <div class="section__wrap">
+          <div class="checkout">
+            <div class="checkout__steps">
+              <div class="checkout-step checkout-step--completed">
+                <div class="checkout-step__number"><span class="fa fa-check"></span></div><span>Carrito</span>
+              </div>
+              <div class="checkout-step checkout-step--active">
+                <div class="checkout-step__number">2</div><span>Datos</span>
+              </div>
+              <div class="checkout-step">
+                <div class="checkout-step__number">3</div><span>Pago</span>
+              </div>
+              <div class="checkout-step">
+                <div class="checkout-step__number">4</div><span>Confirmación</span>
+              </div>
+            </div>
+            <div class="checkout__content">
+              <div class="checkout__main">
+                <div class="checkout-section">
+                  <h3 class="checkout-section__title"><span class="checkout-section__number">1</span>Información de Contacto</h3>
+                  <div class="checkout-form">
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="tu@email.com">
+                      </div>
+                      <div class="form-group">
+                        <label>Teléfono</label>
+                        <input type="tel" placeholder="+56 9 1234 5678">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkout-section">
+                  <h3 class="checkout-section__title"><span class="checkout-section__number">2</span>Dirección de Envío</h3>
+                  <div class="checkout-form">
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Juan">
+                      </div>
+                      <div class="form-group">
+                        <label>Apellido</label>
+                        <input type="text" placeholder="Pérez">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group form-group--full">
+                        <label>Dirección</label>
+                        <input type="text" placeholder="Av. Providencia 1234, Depto 567">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label>Ciudad</label>
+                        <input type="text" placeholder="Santiago">
+                      </div>
+                      <div class="form-group">
+                        <label>Región</label>
+                        <select>
+                          <option value="">Seleccionar región</option>
+                          <option value="rm">Región Metropolitana</option>
+                          <option value="v">Valparaíso</option>
+                          <option value="viii">Biobío</option>
+                          <option value="other">Otra</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label>Código Postal</label>
+                        <input type="text" placeholder="7500000">
+                      </div>
+                      <div class="form-group">
+                        <label>Comuna</label>
+                        <input type="text" placeholder="Providencia">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkout-section">
+                  <h3 class="checkout-section__title"><span class="checkout-section__number">3</span>Método de Envío</h3>
+                  <div class="shipping-options">
+                    <label class="shipping-option shipping-option--selected">
+                      <input type="radio" name="shipping" checked>
+                      <div class="shipping-option__content">
+                        <div class="shipping-option__info"><strong>Envío Express</strong><span>1-2 días hábiles</span></div>
+                        <div class="shipping-option__price">$5.990</div>
+                      </div>
+                    </label>
+                    <label class="shipping-option">
+                      <input type="radio" name="shipping">
+                      <div class="shipping-option__content">
+                        <div class="shipping-option__info"><strong>Envío Estándar</strong><span>3-5 días hábiles</span></div>
+                        <div class="shipping-option__price">Gratis</div>
+                      </div>
+                    </label>
+                    <label class="shipping-option">
+                      <input type="radio" name="shipping">
+                      <div class="shipping-option__content">
+                        <div class="shipping-option__info"><strong>Retiro en Tienda</strong><span>Disponible en 24 horas</span></div>
+                        <div class="shipping-option__price">Gratis</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <div class="checkout-section">
+                  <h3 class="checkout-section__title"><span class="checkout-section__number">4</span>Método de Pago</h3>
+                  <div class="payment-options">
+                    <label class="payment-option payment-option--selected">
+                      <input type="radio" name="payment" checked>
+                      <div class="payment-option__icon"><span class="fa fa-credit-card"></span></div>
+                      <div class="payment-option__info"><strong>Tarjeta de Crédito/Débito</strong><span>Visa, Mastercard, American Express</span></div>
+                    </label>
+                    <label class="payment-option">
+                      <input type="radio" name="payment">
+                      <div class="payment-option__icon"><img src="img/icons/webpay.svg" alt="Webpay"></div>
+                      <div class="payment-option__info"><strong>Webpay Plus</strong><span>Pago seguro con tu banco</span></div>
+                    </label>
+                    <label class="payment-option">
+                      <input type="radio" name="payment">
+                      <div class="payment-option__icon"><span class="fa fa-university"></span></div>
+                      <div class="payment-option__info"><strong>Transferencia Bancaria</strong><span>Banco Estado, BCI, Santander</span></div>
+                    </label>
+                  </div>
+                  <div class="card-form">
+                    <div class="form-row">
+                      <div class="form-group form-group--full">
+                        <label>Número de Tarjeta</label>
+                        <div class="input-icon">
+                          <input type="text" placeholder="1234 5678 9012 3456"><span class="fa fa-credit-card"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label>Fecha de Expiración</label>
+                        <input type="text" placeholder="MM/AA">
+                      </div>
+                      <div class="form-group">
+                        <label>CVV</label>
+                        <div class="input-icon">
+                          <input type="text" placeholder="123"><span class="fa fa-lock"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group form-group--full">
+                        <label>Nombre en la Tarjeta</label>
+                        <input type="text" placeholder="JUAN PEREZ">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout__sidebar">
+                <div class="order-summary">
+                  <h3 class="order-summary__title">Resumen del Pedido</h3>
+                  <div class="order-summary__items">
+                    <div class="order-summary__item">
+                      <div class="order-summary__item__image"><img src="img/uploads/image-subasta-2.webp" alt="Producto"><span class="order-summary__item__qty">1</span></div>
+                      <div class="order-summary__item__info">
+                        <h5>Auriculares Sony WH-1000XM5</h5><span>$299.990</span>
+                      </div>
+                    </div>
+                    <div class="order-summary__item">
+                      <div class="order-summary__item__image"><img src="img/uploads/image-subasta-2.webp" alt="Producto"><span class="order-summary__item__qty">1</span></div>
+                      <div class="order-summary__item__info">
+                        <h5>iPhone 15 Pro Max 256GB</h5><span>$1.299.990</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="order-summary__divider"></div>
+                  <div class="order-summary__row"><span>Subtotal</span><span>$1.599.980</span></div>
+                  <div class="order-summary__row"><span>Envío</span><span>$5.990</span></div>
+                  <div class="order-summary__row order-summary__row--discount"><span>Descuento</span><span>-$50.000</span></div>
+                  <div class="order-summary__divider"></div>
+                  <div class="order-summary__row order-summary__row--total"><span>Total</span><strong>$1.555.970</strong></div>
+                  <div class="order-summary__actions">
+                    <button type="submit" class="btn btn--primary btn--lg btn--block"><span class="fa fa-lock"></span><span>Pagar Ahora</span></button>
+                    <div class="order-summary__secure"><span class="fa fa-shield-alt"></span><span>Pago 100% seguro y encriptado</span></div>
+                  </div>
+                  <div class="order-summary__methods"><img src="img/icons/visa.svg" alt="Visa"><img src="img/icons/mastercard.svg" alt="Mastercard"><img src="img/icons/amex.svg" alt="American Express"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--trust">
+        <div class="section__wrap">
+          <div class="trust-badges">
+            <div class="trust-badge"><span class="fa fa-truck"></span><span>Envío a todo Chile</span></div>
+            <div class="trust-badge"><span class="fa fa-undo"></span><span>Devolución 30 días</span></div>
+            <div class="trust-badge"><span class="fa fa-shield-alt"></span><span>Pago seguro</span></div>
+            <div class="trust-badge"><span class="fa fa-headset"></span><span>Soporte 24/7</span></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="footer__wrap">
+          <div class="footer__grid">
+            <div class="footer__col">
+              <div class="footer__logo"><img src="img/icons/logo-subastapro-white.svg" alt="SubastaPro"></div>
+              <p class="footer__description">Tu plataforma de confianza para subastas online y venta directa. Participa en remates exclusivos o compra al instante.</p>
+              <div class="footer__socials"><a href="#" target="_blank"><span class="fa-brands fa-facebook-f"></span></a><a href="#" target="_blank"><span class="fa-brands fa-instagram"></span></a><a href="#" target="_blank"><span class="fa-brands fa-youtube"></span></a><a href="#" target="_blank"><span class="fa-brands fa-whatsapp"></span></a></div>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__title">Navegación</h4>
+              <ul class="footer__nav">
+                <li><a href="subastas.html">Subastas Activas</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="como-funciona.html">Cómo Funciona</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__title">Mi Cuenta</h4>
+              <ul class="footer__nav">
+                <li><a href="perfil.html">Mi Perfil</a></li>
+                <li><a href="mis-pujas.html">Mis Pujas</a></li>
+                <li><a href="mis-compras.html">Mis Compras</a></li>
+                <li><a href="favoritos.html">Favoritos</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__title">Contacto</h4>
+              <ul class="footer__contact">
+                <li><span class="fa fa-map-marker-alt"></span><span>Av. Principal 1234, Santiago, Chile</span></li>
+                <li><span class="fa fa-phone"></span><span>+56 2 2345 6789</span></li>
+                <li><span class="fa fa-envelope"></span><span>contacto@subastapro.cl</span></li>
+                <li><span class="fa fa-clock"></span><span>Lun - Vie: 9:00 - 18:00</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__wrap">
+          <div class="footer__bottom__inner">
+            <p>&copy; 2024 SubastaPro. Todos los derechos reservados.</p>
+            <div class="footer__legal"><a href="terminos.html">Términos y Condiciones</a><a href="privacidad.html">Política de Privacidad</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="modal-login" class="modal modal--auth">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-times"></span></div>
+          <div class="modal__header">
+            <h3>Iniciar Sesión</h3>
+            <p>Ingresa a tu cuenta para participar en subastas</p>
+          </div>
+          <div class="modal__body">
+            <form class="form form--auth">
+              <div class="form__group">
+                <label class="form__label">Email o Teléfono</label>
+                <div class="form__input"><span class="form__icon fa fa-envelope"></span>
+                  <input type="text" placeholder="correo@ejemplo.com" required>
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__label">Contraseña</label>
+                <div class="form__input"><span class="form__icon fa fa-lock"></span>
+                  <input type="password" placeholder="••••••••" required>
+                  <button type="button" class="form__toggle-password"><span class="fa fa-eye"></span></button>
+                </div>
+              </div>
+              <div class="form__row">
+                <label class="form__checkbox">
+                  <input type="checkbox"><span>Recordarme</span>
+                </label><a href="#" class="form__link">¿Olvidaste tu contraseña?</a>
+              </div>
+              <button type="submit" class="btn btn--primary btn--block">Ingresar</button>
+              <div class="form__divider"><span>o continúa con</span></div>
+              <div class="form__social">
+                <button type="button" class="btn btn--social btn--google"><span class="fa-brands fa-google"></span><span>Google</span></button>
+                <button type="button" class="btn btn--social btn--facebook"><span class="fa-brands fa-facebook-f"></span><span>Facebook</span></button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__footer">
+            <p>¿No tienes cuenta? <a href="#" data-modal-switch="register">Regístrate aquí</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-register" class="modal modal--auth">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-times"></span></div>
+          <div class="modal__header">
+            <h3>Crear Cuenta</h3>
+            <p>Regístrate para comenzar a participar</p>
+          </div>
+          <div class="modal__body">
+            <form class="form form--auth">
+              <div class="form__row form__row--2col">
+                <div class="form__group">
+                  <label class="form__label">Nombre</label>
+                  <div class="form__input">
+                    <input type="text" placeholder="Juan" required>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label class="form__label">Apellido</label>
+                  <div class="form__input">
+                    <input type="text" placeholder="Pérez" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__label">Email</label>
+                <div class="form__input"><span class="form__icon fa fa-envelope"></span>
+                  <input type="email" placeholder="correo@ejemplo.com" required>
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__label">Teléfono</label>
+                <div class="form__input"><span class="form__icon fa fa-phone"></span>
+                  <input type="tel" placeholder="+56 9 1234 5678" required>
+                </div><span class="form__hint">Usaremos tu teléfono para verificar tu cuenta</span>
+              </div>
+              <div class="form__group">
+                <label class="form__label">RUT</label>
+                <div class="form__input"><span class="form__icon fa fa-id-card"></span>
+                  <input type="text" placeholder="12.345.678-9" required>
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__label">Contraseña</label>
+                <div class="form__input"><span class="form__icon fa fa-lock"></span>
+                  <input type="password" placeholder="Mínimo 8 caracteres" required>
+                  <button type="button" class="form__toggle-password"><span class="fa fa-eye"></span></button>
+                </div>
+                <div class="form__password-strength">
+                  <div class="form__password-strength__bar"></div><span class="form__password-strength__text"></span>
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__checkbox">
+                  <input type="checkbox" required><span>Acepto los <a href="terminos.html" target="_blank">Términos y Condiciones</a> y la <a href="privacidad.html" target="_blank">Política de Privacidad</a></span>
+                </label>
+              </div>
+              <button type="submit" class="btn btn--primary btn--block">Crear Cuenta</button>
+              <div class="form__divider"><span>o regístrate con</span></div>
+              <div class="form__social">
+                <button type="button" class="btn btn--social btn--google"><span class="fa-brands fa-google"></span><span>Google</span></button>
+                <button type="button" class="btn btn--social btn--facebook"><span class="fa-brands fa-facebook-f"></span><span>Facebook</span></button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__footer">
+            <p>¿Ya tienes cuenta? <a href="#" data-modal-switch="login">Inicia sesión</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-verify" class="modal modal--auth">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <div class="modal__box modal__box--sm">
+          <div class="modal__close"><span class="fa fa-times"></span></div>
+          <div class="modal__header">
+            <div class="modal__icon"><span class="fa fa-mobile-alt"></span></div>
+            <h3>Verifica tu Teléfono</h3>
+            <p>Ingresa el código de 6 dígitos que enviamos a tu celular</p>
+          </div>
+          <div class="modal__body">
+            <form class="form form--verify">
+              <div class="form__code">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+              </div>
+              <button type="submit" class="btn btn--primary btn--block">Verificar</button>
+              <div class="form__resend">
+                <p>¿No recibiste el código?</p>
+                <button type="button" class="btn btn--link">Reenviar código</button><span class="form__countdown">(disponible en 60s)</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-bid" class="modal modal--bid">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-times"></span></div>
+          <div class="modal__header">
+            <h3>Confirmar Puja</h3>
+          </div>
+          <div class="modal__body">
+            <div class="bid__product">
+              <div class="bid__product__image"><img src="img/uploads/product-1.jpg" alt="Producto"></div>
+              <div class="bid__product__info">
+                <h4 class="bid__product__name">MacBook Pro 14" M3</h4>
+                <div class="bid__product__current"><span>Puja actual:</span><strong>$450.000</strong></div>
+              </div>
+            </div>
+            <div class="bid__amount">
+              <div class="bid__amount__label">Tu puja será de:</div>
+              <div class="bid__amount__value">$460.000</div>
+              <div class="bid__amount__increment"><span>Incremento: $10.000</span></div>
+            </div>
+            <div class="bid__guarantee"><span class="fa fa-shield-alt"></span>
+              <p>Se retendrá una garantía de $50.000 en tu tarjeta</p>
+            </div>
+            <div class="bid__actions">
+              <button type="button" data-modal-close class="btn btn--outline">Cancelar</button>
+              <button type="button" data-bid-confirm class="btn btn--primary">Confirmar Puja</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-buy-now" class="modal modal--buy">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-times"></span></div>
+          <div class="modal__header">
+            <h3>Comprar Ahora</h3>
+          </div>
+          <div class="modal__body">
+            <div class="buy__product">
+              <div class="buy__product__image"><img src="img/uploads/product-1.jpg" alt="Producto"></div>
+              <div class="buy__product__info">
+                <h4 class="buy__product__name">MacBook Pro 14" M3</h4>
+                <div class="buy__product__price">$890.000</div>
+              </div>
+            </div>
+            <div class="buy__summary">
+              <div class="buy__summary__row"><span>Subtotal</span><span>$890.000</span></div>
+              <div class="buy__summary__row"><span>Envío</span><span>Gratis</span></div>
+              <div class="buy__summary__row buy__summary__row--total"><span>Total</span><strong>$890.000</strong></div>
+            </div>
+            <div class="buy__actions">
+              <button type="button" data-modal-close class="btn btn--outline">Cancelar</button>
+              <button type="button" class="btn btn--primary">Proceder al Pago</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
